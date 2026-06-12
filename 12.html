@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Luxus · 12 — The Alchemy (Liquid Gold)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="hero.css" />
+<style>
+  /* ===== The Alchemy — generative liquid-gold hero ===== */
+  .alc{position:relative;width:100vw;height:100vh;overflow:hidden;background:#070707;}
+  .alc canvas{position:absolute;inset:0;width:100%;height:100%;display:block;}
+  .alc .grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");}
+  .alc .scrim{position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(90deg,rgba(7,7,7,.92) 0%,rgba(7,7,7,.7) 30%,rgba(7,7,7,.3) 48%,transparent 66%),
+               linear-gradient(180deg,rgba(7,7,7,.5) 0%,transparent 22%,transparent 64%,rgba(5,5,6,.6) 100%);}
+
+  .alc .top{position:absolute;top:6.2%;left:5%;right:5%;display:flex;align-items:center;justify-content:space-between;z-index:5;}
+  .alc .word{font-family:var(--sans);font-weight:500;font-size:1.25vw;letter-spacing:.5em;color:var(--ink);padding-left:.5em;}
+  .alc .nav{display:flex;gap:1.9vw;}
+
+  .alc .stage{position:absolute;left:5.5%;top:50%;transform:translateY(-52%);z-index:5;width:48%;}
+  .alc .k{font-family:var(--sans);font-size:.66vw;font-weight:500;letter-spacing:.46em;text-transform:uppercase;color:var(--goldSoft);margin-bottom:1.6vw;overflow:hidden;}
+  .alc h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:6.6vw;line-height:.94;color:var(--ink);text-shadow:0 2px 60px rgba(0,0,0,.5);}
+  .alc h1 .ln{display:block;overflow:hidden;white-space:nowrap;padding:0 .14em .18em 0;margin-bottom:-.18em;}
+  .alc h1 .ln > span{display:block;}
+  .alc .lede{margin-top:2.2vw;max-width:23vw;font-family:var(--sans);font-size:.86vw;font-weight:300;line-height:1.7;color:var(--inkSoft);overflow:hidden;}
+
+  .alc .cta-row{position:absolute;left:5.5%;bottom:11%;z-index:5;display:flex;align-items:center;gap:1.6vw;}
+  .alc .vcap{position:absolute;right:4%;bottom:11%;z-index:5;color:var(--goldSoft);}
+  .alc .scrollcue{position:absolute;left:50%;bottom:5.5%;transform:translateX(-50%);z-index:5;display:flex;flex-direction:column;align-items:center;gap:.7vw;}
+  .alc .scrollcue .lab{font-family:var(--sans);font-size:.56vw;font-weight:500;letter-spacing:.36em;text-transform:uppercase;color:var(--mute);}
+  .alc .scrollcue .ln{width:1px;height:3.4vw;background:linear-gradient(180deg,var(--goldSoft),transparent);position:relative;overflow:hidden;}
+  .alc .scrollcue .ln::after{content:"";position:absolute;top:-40%;left:0;width:1px;height:40%;background:var(--ink);animation:cue 2.6s cubic-bezier(.5,0,.5,1) infinite;}
+  @keyframes cue{0%{top:-40%;}60%,100%{top:120%;}}
+
+  @media (prefers-reduced-motion:reduce){.alc .scrollcue .ln::after{animation:none;}}
+  @media (max-width:820px){
+    .alc .nav{display:none;} .alc h1{font-size:14vw;} .alc .stage{max-width:90%;} .alc .lede{max-width:80vw;font-size:3.4vw;}
+    .alc .word{font-size:4.6vw;} .alc .k{font-size:2.6vw;} .alc .vcap{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="alc">
+  <canvas id="gl"></canvas>
+  <div class="scrim"></div>
+  <div class="grain"></div>
+
+  <div class="top">
+    <span class="word">LU<span class="gold">X</span>US</span>
+    <div class="nav">
+      <a class="navlink is" href="#">Home</a><a class="navlink" href="#">About</a><a class="navlink" href="#">Services</a>
+      <a class="navlink" href="#">Memberships</a><a class="navlink" href="#">Testimonials</a><a class="navlink" href="#">Contact</a>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="k"><span>Elite Lifestyle Management</span></div>
+    <h1>
+      <span class="ln"><span>Everything,</span></span>
+      <span class="ln"><span class="gold">handled.</span></span>
+    </h1>
+    <p class="lede">For professional athletes and high performers — the invisible work of an extraordinary life, attended to before it is asked.</p>
+  </div>
+
+  <div class="cta-row">
+    <a class="pill" href="#"><span>Request Membership</span><span class="ar"></span></a>
+    <a class="pill ghost" href="#"><span>Our Services</span><span class="ar"></span></a>
+  </div>
+  <div class="vcap"><span class="vcap" style="position:static;">Discreet · Effortless · Relentless</span></div>
+
+  <div class="scrollcue"><span class="lab">Scroll</span><span class="ln"></span></div>
+</div>
+
+<a class="backlink" href="index.html">← All concepts</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="liquid-gold.js"></script>
+</body>
+</html>
