@@ -3,89 +3,349 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Luxus — Hero Concepts</title>
+<title>Luxus — Elite Lifestyle Concierge</title>
+<meta name="description" content="Elite lifestyle concierge for professional athletes and high performers. Everything, handled — discreetly, effortlessly, relentlessly." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<style>
-  :root{
-    --gold:#B08D57; --goldSoft:#C9A86F; --ink:#F6F5F3; --inkSoft:#CBCBCB; --mute:#8E8E90;
-    --goldGrad:linear-gradient(155deg,#7E6234 0%,#E9D6AC 40%,#C2A06A 58%,#8E703E 100%);
-    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Archivo',system-ui,sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{background:#0A0A0A;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;
-    background-image:radial-gradient(80% 50% at 80% -10%,rgba(176,141,87,.10),transparent 60%);}
-  .gold{background:var(--goldGrad);-webkit-background-clip:text;background-clip:text;color:transparent;}
-  .wrap{max-width:1380px;margin:0 auto;padding:72px 44px 100px;}
-
-  header{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:56px;}
-  .mono{width:60px;height:60px;border-radius:50%;border:1px solid rgba(176,141,87,.4);display:flex;align-items:center;justify-content:center;margin-bottom:22px;}
-  .mono span{font-family:var(--sans);font-weight:600;font-size:26px;padding-left:2px;}
-  .wm{font-family:var(--sans);font-weight:500;font-size:26px;letter-spacing:.5em;padding-left:.5em;}
-  .sub{font-family:var(--serif);font-style:italic;font-weight:500;font-size:30px;color:var(--ink);margin-top:18px;white-space:nowrap;}
-  .meta{font-size:12px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);margin-top:14px;}
-  .rule{width:64px;height:1px;background:var(--goldGrad);margin:26px auto 0;}
-
-  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
-  @media (max-width:760px){.grid{grid-template-columns:1fr;}}
-  .card{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;border-radius:2px;
-    border:1px solid rgba(255,255,255,.07);text-decoration:none;background:#000;}
-  .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-    transition:transform .9s cubic-bezier(.2,.7,.3,1);filter:saturate(.74) brightness(.8) contrast(1.04);}
-  .card:hover img{transform:scale(1.045);filter:saturate(.82) brightness(.95) contrast(1.04);}
-  .card .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,10,.25) 0%,transparent 38%,rgba(6,6,8,.85) 100%);}
-  .card .edge{position:absolute;inset:0;border:1px solid transparent;transition:border-color .3s;}
-  .card:hover .edge{border-color:rgba(176,141,87,.55);}
-  .card .info{position:absolute;left:24px;right:24px;bottom:20px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;}
-  .card .no{font-family:var(--serif);font-style:italic;font-weight:500;font-size:26px;color:var(--goldSoft);line-height:1;}
-  .card .ttl{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:5px;}
-  .card .dsc{font-family:var(--sans);font-size:11px;font-weight:300;letter-spacing:.04em;color:var(--inkSoft);}
-  .card .view{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--goldSoft);white-space:nowrap;opacity:0;transition:opacity .3s;}
-  .card:hover .view{opacity:1;}
-  .motion{display:inline-block;margin-left:7px;font-size:10px;color:var(--goldSoft);vertical-align:middle;opacity:.9;}
-
-  footer{text-align:center;margin-top:54px;font-size:11px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);}
-</style>
+<link rel="stylesheet" href="site.css" />
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="mono"><span class="gold">X</span></div>
-    <div class="wm">LU<span class="gold">X</span>US</div>
-    <div class="sub">Hero Concepts</div>
-    <div class="meta">Twelve full-bleed magazine-cover directions · Graphite Noir</div>
-    <div class="rule"></div>
-  </header>
 
-  <div class="grid">
-    <a class="card" href="01.html"><img src="images/hero-villa.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Masthead Cover</div><div class="dsc">Centred masthead · italic title · seal</div></div><div class="no">01</div></div></a>
-    <a class="card" href="02.html"><img src="images/hero-city.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Split Crop</div><div class="dsc">Colossal title across the architecture</div></div><div class="no">02</div></div></a>
-    <a class="card" href="03.html"><img src="images/hero-jet.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Vertical Spine</div><div class="dsc">Stacked edge navigation · members seal</div></div><div class="no">03</div></div></a>
-    <a class="card" href="04.html"><img src="images/hero-pool.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">Centred Symmetry</div><div class="dsc">Title in the vanishing point</div></div><div class="no">04</div></div></a>
-    <a class="card" href="05.html"><img src="images/hero-yacht.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Broadsheet</div><div class="dsc">Title in the sky · navigation at the foot</div></div><div class="no">05</div></div></a>
-    <a class="card" href="06.html"><img src="images/hero-dining.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">Sidebar Folio</div><div class="dsc">Content block in the right rail</div></div><div class="no">06</div></div></a>
-    <a class="card" href="07.html"><img src="images/hero-grotto.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Whisper</div><div class="dsc">Ultra-minimal · one word · maximum negative space</div></div><div class="no">07</div></div></a>
-    <a class="card" href="08.html"><img src="images/hero-spa.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Framed Edition</div><div class="dsc">Inset gold frame · cover-style masthead</div></div><div class="no">08</div></div></a>
-    <a class="card" href="09.html"><img src="images/hero-monaco.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Dateline</div><div class="dsc">Split top bar · colossal title bottom-left</div></div><div class="no">09</div></div></a>
-    <a class="card" href="10.html"><img src="images/hero-reverie.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Reverie <span class="motion">▶</span></div><div class="dsc">Full-bleed video · centred lower-third title</div></div><div class="no">10</div></div></a>
-    <a class="card" href="11.html"><img src="images/hero-island.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Contents</div><div class="dsc">Dark folio rail · numbered index</div></div><div class="no">11</div></div></a>
-    <a class="card" href="12.html"><img src="images/hero-alchemy.jpg" alt="" /><div class="ov"></div><div class="edge"></div>
-      <div class="info"><div><div class="ttl">The Alchemy <span class="motion">▶</span></div><div class="dsc">Generative liquid-gold WebGL · cursor-reactive</div></div><div class="no">12</div></div></a>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="shell hdr-inner">
+    <a class="brand" href="#top" aria-label="Luxus home"><span class="wm">LU<span class="gold">X</span>US</span></a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a href="#memberships">Memberships</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="hdr-cta" href="#contact"><span class="btn">Request Membership<span class="ar"></span></span></a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
+</header>
 
-  <footer>Luxus Concierge — Confidential · Click any concept to view full-screen</footer>
-</div>
+<!-- mobile drawer -->
+<nav class="mnav">
+  <a href="#services">Services</a>
+  <a href="#how">How it works</a>
+  <a href="#about">About</a>
+  <a href="#memberships">Memberships</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+  <a class="mcta" href="#contact"><span class="btn">Request Membership<span class="ar"></span></span></a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-screen-label="Hero">
+  <div class="glfallback"></div>
+  <canvas id="gl"></canvas>
+  <div class="scrim"></div>
+  <div class="grain"></div>
+  <div class="shell hero-inner">
+    <div class="hero-stage">
+      <div class="eyebrow k anim a0">Elite Lifestyle Management</div>
+      <h1>
+        <span class="ln"><span>Everything,</span></span>
+        <span class="ln"><span class="gold">handled.</span></span>
+      </h1>
+      <p class="lede anim a2">For professional athletes and high performers — the invisible work of an extraordinary life, attended to before it is asked.</p>
+    </div>
+  </div>
+  <div class="shell hero-foot">
+    <div class="hero-cta anim a3">
+      <a class="btn" href="#contact">Request Membership<span class="ar"></span></a>
+      <a class="btn-ghost" href="#services">Our Services<span class="ar"></span></a>
+    </div>
+  </div>
+  <div class="vcap anim a4">Discreet · Effortless · Relentless</div>
+  <div class="scrollcue anim a5"><span class="lab">Scroll</span><span class="ln"></span></div>
+</section>
+
+<!-- ============ STAT BAND ============ -->
+<section class="band" data-screen-label="Credibility band">
+  <div class="grid">
+    <div class="cell reveal"><div class="num"><span class="gold">24/7</span></div><div class="lab">On call, every day</div></div>
+    <div class="cell reveal reveal-d1"><div class="num"><span data-count="150" data-suffix="+">150+</span></div><div class="lab">Requests handled monthly</div></div>
+    <div class="cell reveal reveal-d2"><div class="num"><span data-count="40" data-suffix="+">40+</span></div><div class="lab">Countries covered</div></div>
+    <div class="cell reveal reveal-d3"><div class="num"><span data-count="100" data-suffix="%">100%</span></div><div class="lab">Confidential</div></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services" data-screen-label="Services">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <div class="eyebrow">What we handle</div>
+      <h2>Anything, <span class="gold">arranged.</span></h2>
+      <p>One relationship for the whole of life off the pitch — from the logistics of a season to the detail of a single evening.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13l9-2 7-7a1.6 1.6 0 0 1 2.3 2.3l-7 7-2 9-2.5-5.5L2 13z"/></svg></div>
+        <span class="idx">01</span>
+        <h3>Travel &amp; Charter</h3>
+        <p>Private jets and yachts, seamless transfers, every itinerary considered before you arrive.</p>
+      </article>
+      <article class="svc reveal reveal-d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-5h4v5"/></svg></div>
+        <span class="idx">02</span>
+        <h3>Property &amp; Relocation</h3>
+        <p>Homes found, moves managed, staff and security arranged — settled before the first night.</p>
+      </article>
+      <article class="svc reveal reveal-d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l1.4 8.2A4.6 4.6 0 0 0 12 15a4.6 4.6 0 0 0 4.6-3.8L18 3"/><path d="M12 15v6"/><path d="M8.5 21h7"/></svg></div>
+        <span class="idx">03</span>
+        <h3>Dining &amp; Venue</h3>
+        <p>The impossible table, a private chef, a venue closed for the evening — secured on a word.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 5-9 13L3 8z"/><path d="M3 8h18"/><path d="M9.5 3 8 8l4 13 4-13-1.5-5"/></svg></div>
+        <span class="idx">04</span>
+        <h3>Luxury Acquisition</h3>
+        <p>Watches, art, vehicles and the rare and sought — located, vetted and acquired discreetly.</p>
+      </article>
+      <article class="svc reveal reveal-d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4.4"/><path d="M11 11l9 9"/><path d="M16.5 16.5 19 14M14 19l2.5-2.5"/></svg></div>
+        <span class="idx">05</span>
+        <h3>Concierge &amp; Lifestyle</h3>
+        <p>The everyday admin of an extraordinary life — appointments, gifting, errands — handled quietly.</p>
+      </article>
+      <article class="svc reveal reveal-d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.1l1-5.8L3.5 9.2l5.9-.9L12 3z"/></svg></div>
+        <span class="idx">06</span>
+        <h3>VIP &amp; Access</h3>
+        <p>Events, experiences and introductions — the doors that don't open, opened.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how" data-screen-label="How it works" style="background:var(--well);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <div class="eyebrow">How it works</div>
+      <h2>Three steps. <span class="gold">Then silence.</span></h2>
+      <p>No apps to learn, no queues, no chasing. A single point of contact who already knows your world.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="n">01</div>
+        <h3>Become a member</h3>
+        <p>A private conversation. We learn your routines, your people and your standards.</p>
+      </div>
+      <div class="step reveal reveal-d1">
+        <div class="n">02</div>
+        <h3>Make the request</h3>
+        <p>One message, any hour, anything at all. Call it in, text it, leave it with us.</p>
+      </div>
+      <div class="step reveal reveal-d2">
+        <div class="n">03</div>
+        <h3>Consider it handled</h3>
+        <p>We arrange, confirm and step back. The result arrives; the effort never shows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / FOUNDER ============ -->
+<section class="section" id="about" data-screen-label="About">
+  <div class="shell about">
+    <div class="portrait reveal">
+      <div class="frame"><img src="images/founder.webp" alt="David Clarke, Founder of Luxus" /></div>
+      <div class="tag"><div class="nm ser">David Clarke</div><div class="rl">Founder</div></div>
+    </div>
+    <div class="copy reveal reveal-d1">
+      <div class="eyebrow" style="margin-bottom:16px;">Who we are</div>
+      <h2>Built around the lives of people who cannot afford to be distracted.</h2>
+      <p>Luxus began with a simple observation: the best protect their focus. For a professional athlete, a free mind is a competitive advantage — and the admin of an extraordinary life is relentless.</p>
+      <p>We exist to take that weight away. A discreet team, a single number, and a standing brief to handle whatever the day demands — from the routine to the genuinely impossible.</p>
+      <div class="sig ser">Discreet. Effortless. Relentless.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEMBERSHIPS ============ -->
+<section class="section" id="memberships" data-screen-label="Memberships" style="background:var(--well);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);">
+  <div class="shell">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Luxus Memberships</div>
+      <h2>Choose how you'd like to <span class="gold">work with us.</span></h2>
+      <p>Both memberships open the same door. The difference is how often you'd like to walk through it &mdash; and how much of the friction you'd like us to take away.</p>
+    </div>
+    <div class="tiers two">
+      <article class="tier reveal">
+        <div class="badge">Luxus Black</div>
+        <div class="nm">Black</div>
+        <div class="role">An open door</div>
+        <div class="pr"><b>£500</b> / year</div>
+        <div class="hr"></div>
+        <ul>
+          <li>Access to the full Luxus Concierge service, any time you need it.</li>
+          <li>Arrangement fees from £150 plus VAT, scaled to the size and complexity of each request.</li>
+          <li>Standard response times, with the same care behind every booking.</li>
+          <li>Invitations to our wider programme of experiences.</li>
+        </ul>
+        <a class="btn-ghost tier-cta" href="#contact">Enquire<span class="ar"></span></a>
+      </article>
+
+      <article class="tier feature reveal reveal-d1">
+        <div class="ribbon">Most chosen</div>
+        <div class="badge">Luxus Privé</div>
+        <div class="nm">Privé</div>
+        <div class="role">Frictionless, dedicated, first in line</div>
+        <div class="pr"><b>Price On Application</b></div>
+        <div class="hr"></div>
+        <ul>
+          <li>Everything in Luxus Black, with arrangement fees waived on almost all requests.</li>
+          <li>A dedicated concierge who learns your preferences and remembers them.</li>
+          <li>Priority response &mdash; your requests jump the queue when capacity is constrained.</li>
+          <li>First-look invitations to our most exclusive experiences, often before they reach the wider list.</li>
+        </ul>
+        <a class="btn tier-cta" href="#contact">Enquire<span class="ar"></span></a>
+      </article>
+    </div>
+    <p class="mq reveal">&ldquo;We don't measure ourselves by the size of the request. We measure ourselves by how easy you found it to ask.&rdquo;</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section" id="testimonials" data-screen-label="Testimonials">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Member voices</div>
+      <h2>The best <span class="gold">protect their focus.</span></h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal">
+        <img class="bg" src="images/pope.png" alt="Nick Pope" />
+        <div class="ov"></div>
+        <div class="qc">
+          <div class="mark">&ldquo;</div>
+          <blockquote>The team offers a truly hassle-free service.</blockquote>
+          <div class="who"><div class="nm">Nick Pope</div><div class="rl">Professional Footballer</div></div>
+        </div>
+      </figure>
+      <figure class="quote reveal reveal-d1">
+        <img class="bg" src="images/greaves.png" alt="Jacob Greaves" />
+        <div class="ov"></div>
+        <div class="qc">
+          <div class="mark">&ldquo;</div>
+          <blockquote>Luxus elevates my lifestyle, letting me focus on my career.</blockquote>
+          <div class="who"><div class="nm">Jacob Greaves</div><div class="rl">Professional Footballer</div></div>
+        </div>
+      </figure>
+      <figure class="quote reveal reveal-d2">
+        <img class="bg" src="images/hinshelwood.png" alt="Jack Hinshelwood" />
+        <div class="ov"></div>
+        <div class="qc">
+          <div class="mark">&ldquo;</div>
+          <blockquote>Luxus have been a game changer for me.</blockquote>
+          <div class="who"><div class="nm">Jack Hinshelwood</div><div class="rl">Professional Footballer</div></div>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact" data-screen-label="Contact">
+  <div class="shell contact-grid">
+    <div class="lead reveal">
+      <div class="eyebrow" style="margin-bottom:16px;">Make contact</div>
+      <h2>Begin a quiet <span class="gold">conversation.</span></h2>
+      <p>Tell us a little about your world. Every enquiry is read in confidence by a member of our team, and answered personally.</p>
+      <div class="details">
+        <div class="row"><div class="l">Email</div><div class="v">connect@luxuslm.com</div></div>
+        <div class="row"><div class="l">Phone</div><div class="v">+44 (0) 207 846 0182</div></div>
+        <div class="row"><div class="l">Hours</div><div class="v">Concierge desk · 24 / 7</div></div>
+        <div class="row"><div class="l">Office</div><div class="v">London, UK</div></div>
+      </div>
+    </div>
+
+    <!-- ELEMENTOR: replace this <form> with your Fluent Forms shortcode/widget.
+         The fields below mirror the recommended form so the styling matches. -->
+    <form class="form reveal reveal-d1" onsubmit="return false;">
+      <div class="frow">
+        <div class="field"><label>Full name</label><input type="text" placeholder="Your name" /></div>
+        <div class="field"><label>Email</label><input type="email" placeholder="you@email.com" /></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label>Phone</label><input type="tel" placeholder="+44 …" /></div>
+        <div class="field"><label>Profession / sport</label><input type="text" placeholder="e.g. Footballer" /></div>
+      </div>
+      <div class="field full">
+        <label>Services of interest</label>
+        <select>
+          <option value="" disabled selected>Select…</option>
+          <option>Travel &amp; Charter</option>
+          <option>Property &amp; Relocation</option>
+          <option>Dining &amp; Venue</option>
+          <option>Luxury Acquisition</option>
+          <option>Concierge &amp; Lifestyle</option>
+          <option>VIP &amp; Access</option>
+          <option>Full membership</option>
+        </select>
+      </div>
+      <div class="field full"><label>What can we handle?</label><textarea placeholder="A few words on what you need…"></textarea></div>
+      <div class="form-foot">
+        <p class="note">By enquiring you agree to be contacted in confidence. We never share your details.</p>
+        <button class="btn" type="submit">Submit enquiry<span class="ar"></span></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="brandblock">
+        <span class="wm" style="font-family:var(--sans);font-weight:500;font-size:22px;letter-spacing:.42em;padding-left:.42em;">LU<span class="gold">X</span>US</span>
+        <div class="tagline ser">elevate your <span class="gold">everyday.</span></div>
+        <div class="social">
+          <a href="https://www.instagram.com/luxusconcierge/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/luxuslifestylemgmt/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.3l.4-2.7h-2.7V9.5c0-.78.22-1.3 1.36-1.3H16V5.8c-.25-.03-1.1-.1-2.08-.1-2.06 0-3.47 1.26-3.47 3.57V11.3H8.2V14h2.25v7h3.05z"/></svg></a>
+          <a href="https://uk.linkedin.com/company/luxus-lifestyle-management" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5v11H3.6v-11h3.34zM5.27 3.6a1.94 1.94 0 1 1 0 3.88 1.94 1.94 0 0 1 0-3.88zM20.4 19.5h-3.33v-5.6c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.7H9.74v-11h3.2v1.5h.04c.45-.84 1.54-1.72 3.17-1.72 3.39 0 4.02 2.23 4.02 5.13v6.09z"/></svg></a>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="col">
+          <h4>Services</h4>
+          <a href="#services">Travel &amp; Charter</a>
+          <a href="#services">Property &amp; Relocation</a>
+          <a href="#services">Dining &amp; Venue</a>
+          <a href="#services">Luxury Acquisition</a>
+        </div>
+        <div class="col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#memberships">Memberships</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="col">
+          <h4>Contact</h4>
+          <a href="mailto:connect@luxuslm.com">connect@luxuslm.com</a>
+          <a href="tel:+442078460182">+44 (0) 207 846 0182</a>
+          <span>London, UK</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="fine">© 2026 Luxus Lifestyle Management — Confidential</div>
+      <div class="legal-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      <div class="fine">Discreet · Effortless · Relentless</div>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
 </html>
